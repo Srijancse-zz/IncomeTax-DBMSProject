@@ -13,9 +13,11 @@ if (isset($_POST['submit']))
 		$new_user = array(
 			"firstname" => $_POST['firstname'],
 			"lastname"  => $_POST['lastname'],
+			"phone" => $_POST['phone'],
+			"address"  => $_POST['address'],
 			"email"     => $_POST['email'],
-			"age"       => $_POST['age'],
-			"location"  => $_POST['location']
+			"id_type" => $_POST['id_type'],
+			"id_number" => $_POST['id_number'],
 		);
 
 		$sql = sprintf(
@@ -53,14 +55,20 @@ if (isset($_POST['submit']) && $statement)
 	<input type="text" name="firstname" id="firstname">
 	<label for="lastname">Last Name</label>
 	<input type="text" name="lastname" id="lastname">
+	<label for="phone">Phone</label>
+	<input type="text" name="phone" id="phone">
+	<label for="address">Address</label>
+	<input type="text" name="address" id="address">
 	<label for="email">Email Address</label>
 	<input type="text" name="email" id="email">
-	<label for="age">Age</label>
-	<input type="text" name="age" id="age">
-	<label for="location">Location</label>
-	<input type="text" name="location" id="location">
+	<label for="id_type">ID Type</label>
+	<input type="text" name="id_type" id="id_type">
+	<label for="id_number">ID Number</label>
+	<input type="text" name="id_number" id="id_number">
 	<input type="submit" name="submit" value="Submit">
 </form>
+
+<br>
 
 <a href="index.php">Back to home</a>
 
