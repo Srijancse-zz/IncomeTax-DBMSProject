@@ -12,4 +12,4 @@
 </head>
 
 <body>
-	<h1>DBMS Project</h1>
+	<h1>Income Tax Management System</h1>

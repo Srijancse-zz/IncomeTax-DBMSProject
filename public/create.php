@@ -53,18 +53,32 @@ if (isset($_POST['submit']) && $statement)
 <form method="post">
 	<label for="firstname">First Name</label>
 	<input type="text" name="firstname" id="firstname">
+	<br>
+	<br>
 	<label for="lastname">Last Name</label>
 	<input type="text" name="lastname" id="lastname">
+	<br>
+	<br>
 	<label for="phone">Phone</label>
 	<input type="text" name="phone" id="phone">
+	<br>
+	<br>
 	<label for="address">Address</label>
 	<input type="text" name="address" id="address">
+	<br>
+	<br>
 	<label for="email">Email Address</label>
 	<input type="text" name="email" id="email">
+	<br>
+	<br>
 	<label for="id_type">ID Type</label>
 	<input type="text" name="id_type" id="id_type">
+	<br>
+	<br>
 	<label for="id_number">ID Number</label>
 	<input type="text" name="id_number" id="id_number">
+	<br>
+	<br>
 	<input type="submit" name="submit" value="Submit">
 </form>
 
